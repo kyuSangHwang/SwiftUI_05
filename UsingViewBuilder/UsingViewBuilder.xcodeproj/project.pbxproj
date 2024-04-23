@@ -11,6 +11,7 @@
 		78EE4BB52BD7991600ABC479 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4BB42BD7991600ABC479 /* ContentView.swift */; };
 		78EE4BB72BD7991A00ABC479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EE4BB62BD7991A00ABC479 /* Assets.xcassets */; };
 		78EE4BBA2BD7991A00ABC479 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EE4BB92BD7991A00ABC479 /* Preview Assets.xcassets */; };
+		78EE4BC12BD7995D00ABC479 /* BlueCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4BC02BD7995D00ABC479 /* BlueCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		78EE4BB42BD7991600ABC479 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78EE4BB62BD7991A00ABC479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78EE4BB92BD7991A00ABC479 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78EE4BC02BD7995D00ABC479 /* BlueCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				78EE4BB22BD7991600ABC479 /* UsingViewBuilderApp.swift */,
 				78EE4BB42BD7991600ABC479 /* ContentView.swift */,
+				78EE4BC02BD7995D00ABC479 /* BlueCircle.swift */,
 				78EE4BB62BD7991A00ABC479 /* Assets.xcassets */,
 				78EE4BB82BD7991A00ABC479 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78EE4BC12BD7995D00ABC479 /* BlueCircle.swift in Sources */,
 				78EE4BB52BD7991600ABC479 /* ContentView.swift in Sources */,
 				78EE4BB32BD7991600ABC479 /* UsingViewBuilderApp.swift in Sources */,
 			);
