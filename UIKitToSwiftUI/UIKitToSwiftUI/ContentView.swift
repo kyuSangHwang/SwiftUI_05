@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var animate: Bool = true
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ActivityIndicator(animating: animate)
+            HStack {
+                Toggle(isOn: $animate) {
+                    Text("Toggle Activity")
+                }
+            }
         }
         .padding()
     }
