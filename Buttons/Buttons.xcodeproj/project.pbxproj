@@ -14,6 +14,7 @@
 		78EE4B692BD77D3E00ABC479 /* EditButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4B682BD77D3E00ABC479 /* EditButtonView.swift */; };
 		78EE4B6B2BD77D4B00ABC479 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4B6A2BD77D4B00ABC479 /* MenuButtonView.swift */; };
 		78EE4B6F2BD77D6400ABC479 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4B6E2BD77D6400ABC479 /* ButtonView.swift */; };
+		78EE4B712BD78C2200ABC479 /* PasteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4B702BD78C2200ABC479 /* PasteButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		78EE4B682BD77D3E00ABC479 /* EditButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonView.swift; sourceTree = "<group>"; };
 		78EE4B6A2BD77D4B00ABC479 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
 		78EE4B6E2BD77D6400ABC479 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		78EE4B702BD78C2200ABC479 /* PasteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				78EE4B6E2BD77D6400ABC479 /* ButtonView.swift */,
 				78EE4B682BD77D3E00ABC479 /* EditButtonView.swift */,
 				78EE4B6A2BD77D4B00ABC479 /* MenuButtonView.swift */,
+				78EE4B702BD78C2200ABC479 /* PasteButtonView.swift */,
 				78EE4B522BD77BC300ABC479 /* Assets.xcassets */,
 				78EE4B542BD77BC300ABC479 /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				78EE4B692BD77D3E00ABC479 /* EditButtonView.swift in Sources */,
 				78EE4B512BD77BBF00ABC479 /* ContentView.swift in Sources */,
+				78EE4B712BD78C2200ABC479 /* PasteButtonView.swift in Sources */,
 				78EE4B6F2BD77D6400ABC479 /* ButtonView.swift in Sources */,
 				78EE4B4F2BD77BBF00ABC479 /* ButtonsApp.swift in Sources */,
 				78EE4B6B2BD77D4B00ABC479 /* MenuButtonView.swift in Sources */,
