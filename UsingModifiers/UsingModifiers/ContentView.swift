@@ -11,7 +11,7 @@ struct BackgroundStyle: ViewModifier {
     var bgColor: Color
     func body(content: Content) -> some View {
         content
-            .frame(width: UIScreen.main.bounds.width * 0.3) // UI : UIKit에서 가져오는 객체들 
+            .frame(width: UIScreen.main.bounds.width * 0.3) // UI : UIKit에서 가져오는 객체들
             .foregroundStyle(.black)
             .padding()
             .background(bgColor)
