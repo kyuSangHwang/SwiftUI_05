@@ -22,10 +22,12 @@ struct MenuButtonView: View {
                 print("Selected USA")
             }
         }
-        .navigationTitle("MenuButtons")
+        .navigationTitle("MenuButton")
     }
 }
 
 #Preview {
-    MenuButtonView()
+    NavigationStack {
+        MenuButtonView()
+    }
 }
