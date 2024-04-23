@@ -13,6 +13,9 @@ struct PasteButtonView: View {
     var body: some View {
         VStack {
             Text(text)
+            TextField("", text: $text)
+                .textFieldStyle(.roundedBorder)
+                .padding()
             PasteButton(payloadType: String.self) { strings in
                 guard let string = strings.first else {
                     return
@@ -23,7 +26,7 @@ struct PasteButtonView: View {
             .labelStyle(.iconOnly)
             .tint(.red)
         }
-        .navigationTitle("PasteButton")
+        .navigationTitle("PasteButton View")
     }
 }
 
