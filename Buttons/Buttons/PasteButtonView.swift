@@ -23,7 +23,7 @@ struct PasteButtonView: View {
             .labelStyle(.iconOnly)
             .tint(.red)
         }
-        .navigationTitle("MenuButton")
+        .navigationTitle("PasteButton")
     }
 }
 
