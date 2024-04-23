@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var showText = false
     @State private var transitModes = ["Bike", "Car", "Bus"]
     @State private var sliderVal: Float = 0
+    @State private var stepVal = 0
     @State private var gameTime = Date()
     
     var body: some View {
@@ -40,6 +41,19 @@ struct ContentView: View {
             Section {
                 Slider(value: $sliderVal, in: 0...10, step: 0.001)
                 Text("Slider current value: \(sliderVal, specifier: "%.3f")")
+            }
+            
+            Section {
+                Stepper("Stepper", value: $stepVal, in: 0...5)
+                Text("Stepper current value: \(stepVal)")
+            }
+            
+            Section {
+                DatePicker("Please select a date", selection: $gameTime)
+            }
+            
+            Section {
+                DatePicker("Please select a date", selection: $gameTime, in: Date()...)
             }
         }
     }
