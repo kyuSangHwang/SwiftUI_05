@@ -11,7 +11,8 @@ struct BackgroundStyle: ViewModifier {
     var bgColor: Color
     func body(content: Content) -> some View {
         content
-            .frame(width: UIScreen.main.bounds.width * 0.3) // UI : UIKit에서 가져오는 객체들
+                        // UI : UIKit에서 가져오는 객체들.
+            .frame(width: UIScreen.main.bounds.width * 0.3) // 모바일 가로 면적에 30% 라고 이해하면 됨.
             .foregroundStyle(.black)
             .padding()
             .background(bgColor)
@@ -19,10 +20,17 @@ struct BackgroundStyle: ViewModifier {
     }
 }
 
+extension View {
+    func customBackgroundStyle(color: Color) -> some View {
+        modifier(BackgroundStyle(bgColor: color))
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Perfect").modifier(BackgroundStyle(bgColor: .green))
+            Text("Perfect")
+                .customBackgroundStyle(color: .green)
         }
         .padding()
     }
