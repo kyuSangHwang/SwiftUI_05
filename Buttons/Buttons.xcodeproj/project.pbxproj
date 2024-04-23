@@ -61,10 +61,10 @@
 			children = (
 				78EE4B4E2BD77BBF00ABC479 /* ButtonsApp.swift */,
 				78EE4B502BD77BBF00ABC479 /* ContentView.swift */,
-				78EE4B6A2BD77D4B00ABC479 /* MenuButtonView.swift */,
-				78EE4B6C2BD77D5700ABC479 /* PasteButtonView.swift */,
 				78EE4B6E2BD77D6400ABC479 /* ButtonView.swift */,
 				78EE4B682BD77D3E00ABC479 /* EditButtonView.swift */,
+				78EE4B6A2BD77D4B00ABC479 /* MenuButtonView.swift */,
+				78EE4B6C2BD77D5700ABC479 /* PasteButtonView.swift */,
 				78EE4B522BD77BC300ABC479 /* Assets.xcassets */,
 				78EE4B542BD77BC300ABC479 /* Preview Content */,
 			);
