@@ -21,9 +21,14 @@ struct ContentView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
+                    Spacer()
                     Button("Add") {
                         addItemToRow()
                     }
+                    Button("Sort") {
+                        sortItems()
+                    }
+                    Spacer()
                 }
             }
         }
@@ -31,6 +36,10 @@ struct ContentView: View {
     
     private func addItemToRow() {
         numbers.append(Int.random(in: 5..<100))
+    }
+    
+    private func sortItems() {
+        numbers.sort()
     }
 }
 
