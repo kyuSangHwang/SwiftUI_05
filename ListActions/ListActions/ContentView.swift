@@ -16,6 +16,7 @@ struct ContentView: View {
                 ForEach(numbers, id: \.self) { number in
                     Text("\(number)")
                 }
+                .onMove(perform: moveRow)
                 .onDelete(perform: { indexSet in
                     numbers.remove(atOffsets: indexSet)
                 })
@@ -36,8 +37,16 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    EditButton()
+                }
             }
         }
+    }
+    
+    private func moveRow(source: IndexSet, detination: Int) {
+        numbers.move(fromOffsets: source, toOffset: detination)
     }
     
     private func addItemToRow() {
