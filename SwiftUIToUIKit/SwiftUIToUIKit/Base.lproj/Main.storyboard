@@ -57,7 +57,6 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OB5-yH-iea"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="Gay-xq-eBi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjo-ZO-8GS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -65,9 +64,6 @@
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="OB5-yH-iea"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
