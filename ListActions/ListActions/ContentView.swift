@@ -28,6 +28,9 @@ struct ContentView: View {
                     Button("Sort") {
                         sortItems()
                     }
+                    Button("removeAll") {
+                        removeAllItems()
+                    }
                     Spacer()
                 }
             }
@@ -40,6 +43,10 @@ struct ContentView: View {
     
     private func sortItems() {
         numbers.sort()
+    }
+    
+    private func removeAllItems() {
+        numbers.removeAll()
     }
 }
 
