@@ -11,6 +11,7 @@
 		78E3FD362BDB464A006217DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E3FD352BDB464A006217DC /* ContentView.swift */; };
 		78E3FD382BDB464D006217DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E3FD372BDB464D006217DC /* Assets.xcassets */; };
 		78E3FD3C2BDB464D006217DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E3FD3B2BDB464D006217DC /* Preview Assets.xcassets */; };
+		78E3FD432BDB4729006217DC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E3FD422BDB4729006217DC /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		78E3FD372BDB464D006217DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78E3FD392BDB464D006217DC /* PreviewingInNavigationStack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewingInNavigationStack.entitlements; sourceTree = "<group>"; };
 		78E3FD3B2BDB464D006217DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78E3FD422BDB4729006217DC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				78E3FD332BDB464A006217DC /* PreviewingInNavigationStackApp.swift */,
 				78E3FD352BDB464A006217DC /* ContentView.swift */,
+				78E3FD422BDB4729006217DC /* SecondView.swift */,
 				78E3FD372BDB464D006217DC /* Assets.xcassets */,
 				78E3FD392BDB464D006217DC /* PreviewingInNavigationStack.entitlements */,
 				78E3FD3A2BDB464D006217DC /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E3FD432BDB4729006217DC /* SecondView.swift in Sources */,
 				78E3FD362BDB464A006217DC /* ContentView.swift in Sources */,
 				78E3FD342BDB464A006217DC /* PreviewingInNavigationStackApp.swift in Sources */,
 			);
