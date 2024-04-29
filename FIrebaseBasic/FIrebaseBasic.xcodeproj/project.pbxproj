@@ -15,6 +15,7 @@
 		7808375E2BDF5A27003B29C0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 7808375D2BDF5A27003B29C0 /* GoogleSignIn */; };
 		780837602BDF5A27003B29C0 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7808375F2BDF5A27003B29C0 /* GoogleSignInSwift */; };
 		780837632BDF6B30003B29C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 780837622BDF6B30003B29C0 /* GoogleService-Info.plist */; };
+		780837652BDF73D9003B29C0 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780837642BDF73D9003B29C0 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		780837522BDF5979003B29C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		780837612BDF5E25003B29C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		780837622BDF6B30003B29C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		780837642BDF73D9003B29C0 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				780837612BDF5E25003B29C0 /* Info.plist */,
 				7808374B2BDF5977003B29C0 /* FIrebaseBasicApp.swift */,
 				7808374D2BDF5977003B29C0 /* ContentView.swift */,
+				780837642BDF73D9003B29C0 /* AuthenticationViewModel.swift */,
 				7808374F2BDF5979003B29C0 /* Assets.xcassets */,
 				780837622BDF6B30003B29C0 /* GoogleService-Info.plist */,
 				780837512BDF5979003B29C0 /* Preview Content */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780837652BDF73D9003B29C0 /* AuthenticationViewModel.swift in Sources */,
 				7808374E2BDF5977003B29C0 /* ContentView.swift in Sources */,
 				7808374C2BDF5977003B29C0 /* FIrebaseBasicApp.swift in Sources */,
 			);
