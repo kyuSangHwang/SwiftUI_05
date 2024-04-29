@@ -33,8 +33,8 @@ final class AuthenticationViewModel {
     
     var state: State = .busy
     private var authResult: AuthDataResult? = nil
-    var userName: String { authResult?.user.displayName ?? ""}
-    var userEmail: String { authResult?.user.email ?? ""}
+    var username: String { authResult?.user.displayName ?? "" }
+    var email: String { authResult?.user.email ?? "" }
     var photoURL: URL? { authResult?.user.photoURL }
     
     func logout() {
@@ -45,9 +45,9 @@ final class AuthenticationViewModel {
         state = .signedOut
     }
     
-    func restorePreviousSighIn() {
+    func restorePreviousSignIn() {
         GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-            if let error { print("Error: \(error.localizedDescription)") }
+            if let error { print("Error: \(error.localizedDescription)")}
             Task {
                 await self.signIn(user: user)
             }
@@ -63,8 +63,7 @@ final class AuthenticationViewModel {
         let configuration = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = configuration
         GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController, hint: nil) { result, error in
-            if let error { print("Error: \(error.localizedDescription)")}
-            
+            if let error { print("Error: \(error.localizedDescription)") }
             Task {
                 await self.signIn(user: result?.user)
             }
