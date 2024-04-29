@@ -9,10 +9,12 @@ import SwiftUI
 import GoogleSignInSwift
 
 struct ContentView: View {
-    @State var authenticationViewModel = AuthenticationViewModel() 
+    @State var authenticationViewModel = AuthenticationViewModel()
+    
     var body: some View {
         ZStack {
             Color.white.ignoresSafeArea(.all)
+            
             switch authenticationViewModel.state {
             case .busy:
                 ProgressView()
@@ -24,8 +26,4 @@ struct ContentView: View {
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
