@@ -18,7 +18,7 @@ class RemoteConfiguration {
         settings.minimumFetchInterval = 0
         remoteConfig.configSettings = settings
     }
-    
+
     private func activate() {
         remoteConfig.activate { changed, error in
             guard error == nil else {
@@ -49,6 +49,7 @@ class RemoteConfiguration {
             activate()
         }
     }
+    
 }
 
 struct ContentView: View {
@@ -69,8 +70,8 @@ struct ContentView: View {
         VStack {
             if screenType != nil {
                 Image(systemName: image.name)
-                    .foregroundStyle(.red)
-                    .font(.system(size: 350))
+                    .foregroundStyle(image.color)
+                    .font(.system(size: 250))
             } else {
                 ProgressView()
                     .controlSize(.large)

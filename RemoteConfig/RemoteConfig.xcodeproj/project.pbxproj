@@ -13,7 +13,7 @@
 		780837302BDF3168003B29C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7808372F2BDF3168003B29C0 /* Preview Assets.xcassets */; };
 		780837382BDF340C003B29C0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 780837372BDF340C003B29C0 /* FirebaseRemoteConfig */; };
 		7808373A2BDF340C003B29C0 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 780837392BDF340C003B29C0 /* FirebaseRemoteConfigSwift */; };
-		7808373C2BDF3A4C003B29C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7808373B2BDF3A4C003B29C0 /* GoogleService-Info.plist */; };
+		7808373E2BDF57D8003B29C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7808373D2BDF57D8003B29C0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		7808372A2BDF3164003B29C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7808372C2BDF3168003B29C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7808372F2BDF3168003B29C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7808373B2BDF3A4C003B29C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7808373D2BDF57D8003B29C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 				780837282BDF3164003B29C0 /* RemoteConfigApp.swift */,
 				7808372A2BDF3164003B29C0 /* ContentView.swift */,
 				7808372C2BDF3168003B29C0 /* Assets.xcassets */,
-				7808373B2BDF3A4C003B29C0 /* GoogleService-Info.plist */,
+				7808373D2BDF57D8003B29C0 /* GoogleService-Info.plist */,
 				7808372E2BDF3168003B29C0 /* Preview Content */,
 			);
 			path = RemoteConfig;
@@ -141,7 +141,7 @@
 			files = (
 				780837302BDF3168003B29C0 /* Preview Assets.xcassets in Resources */,
 				7808372D2BDF3168003B29C0 /* Assets.xcassets in Resources */,
-				7808373C2BDF3A4C003B29C0 /* GoogleService-Info.plist in Resources */,
+				7808373E2BDF57D8003B29C0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
