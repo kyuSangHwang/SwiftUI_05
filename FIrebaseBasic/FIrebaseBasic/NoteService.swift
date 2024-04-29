@@ -23,3 +23,4 @@ class NoteService: ObservableObject {
     
     private func updatesNote(snapshot: QuerySnapshot) {}
 }
+
