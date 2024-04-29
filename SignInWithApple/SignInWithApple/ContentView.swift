@@ -28,14 +28,16 @@ struct ContentView: View {
     @AppStorage("userID") private var userID: String = ""
     
     var body: some View {
-        ZStack{
+        ZStack {
             Color.white
-            if userName.isEmpty{
-                SignInWithAppleButton(.signIn, onRequest: onRequest, onCompletion: onCompletion)
-                    .signInWithAppleButtonStyle(.black)
-                    .frame(width: 200, height: 50)
+            if userName.isEmpty {
+                SignInWithAppleButton(.signIn, onRequest: onRequest,  onCompletion: onCompletion)
+                .signInWithAppleButtonStyle(.black)
+                .frame(width: 200, height: 50)
             } else {
                 Text("Welcome\n\(userName), \(userEmail)")
+                    .foregroundStyle(.black)
+                    .font(.headline)
             }
         }
         .task { await authorize() }
