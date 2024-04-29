@@ -9,7 +9,7 @@ import SwiftUI
 import GoogleSignInSwift
 
 struct ContentView: View {
-    @State var authenticationViewModel = AuthenticationViewModel()
+    @StateObject var authenticationViewModel = AuthenticationViewModel()
     
     var body: some View {
         ZStack {
@@ -24,6 +24,9 @@ struct ContentView: View {
                 GoogleSignInButton(action: authenticationViewModel.login)
                     .frame(width: 150, height: 30, alignment: .center)
             }
+        }
+        .task {
+            authenticationViewModel.restorePreviousSignIn()
         }
     }
 }
