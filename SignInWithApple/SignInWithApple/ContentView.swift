@@ -12,8 +12,9 @@ struct ContentView: View {
     @State private var userName: String = ""
     @State private var userEmail: String = ""
     
+    // property observer 사용
     @AppStorage("storedName") private var storedName: String = "" {
-        didSet {
+        didSet { // property가 set된 다음에 실행되는 property closure 구문
             userName = storedName
         }
     }
@@ -36,6 +37,30 @@ struct ContentView: View {
             } else {
                 Text("Welcome\n\(userName), \(userEmail)")
             }
+        }
+        .task { await authorize() }
+    }
+    
+    private func authorize() async {
+        guard !userID.isEmpty else {
+            userName = ""
+            userEmail = ""
+            return
+        }
+        guard let credentialState = try? await ASAuthorizationAppleIDProvider()
+            .credentialState(forUserID: userID) else {
+            userName = ""
+            userEmail = ""
+            return
+        }
+        
+        switch credentialState {
+        case .authorized:
+            userName = storedName
+            userEmail = storedEmail
+        default:
+            userName = ""
+            userEmail = ""
         }
     }
     
