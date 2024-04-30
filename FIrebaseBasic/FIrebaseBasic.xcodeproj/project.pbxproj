@@ -24,6 +24,7 @@
 		7818EA692BE06DFB009105CB /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7818EA682BE06DFB009105CB /* NotesListView.swift */; };
 		7818EA6B2BE06F35009105CB /* NoteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7818EA6A2BE06F35009105CB /* NoteSummaryView.swift */; };
 		7818EA6D2BE06F48009105CB /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7818EA6C2BE06F48009105CB /* NoteDetailView.swift */; };
+		7818EA712BE074C3009105CB /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7818EA702BE074C3009105CB /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7818EA682BE06DFB009105CB /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
 		7818EA6A2BE06F35009105CB /* NoteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSummaryView.swift; sourceTree = "<group>"; };
 		7818EA6C2BE06F48009105CB /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		7818EA702BE074C3009105CB /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				780837662BDF844D003B29C0 /* ProfileView.swift */,
 				7818EA6C2BE06F48009105CB /* NoteDetailView.swift */,
 				7818EA6A2BE06F35009105CB /* NoteSummaryView.swift */,
+				7818EA702BE074C3009105CB /* AddNoteView.swift */,
 				780837642BDF73D9003B29C0 /* AuthenticationViewModel.swift */,
 				7808374F2BDF5979003B29C0 /* Assets.xcassets */,
 				780837622BDF6B30003B29C0 /* GoogleService-Info.plist */,
@@ -189,6 +192,7 @@
 				7808376D2BDF8EF0003B29C0 /* Note.swift in Sources */,
 				780837672BDF844D003B29C0 /* ProfileView.swift in Sources */,
 				780837652BDF73D9003B29C0 /* AuthenticationViewModel.swift in Sources */,
+				7818EA712BE074C3009105CB /* AddNoteView.swift in Sources */,
 				7808374E2BDF5977003B29C0 /* ContentView.swift in Sources */,
 				7808374C2BDF5977003B29C0 /* FIrebaseBasicApp.swift in Sources */,
 				7808376F2BDF912B003B29C0 /* NotesService.swift in Sources */,
