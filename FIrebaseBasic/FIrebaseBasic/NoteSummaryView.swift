@@ -32,6 +32,7 @@ struct NoteSummaryView: View {
                 Text("\(note.date, format: format)")
                     .font(.subheadline)
             }
+        }
     }
 }
 
