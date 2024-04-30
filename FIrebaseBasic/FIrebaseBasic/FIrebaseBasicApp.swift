@@ -26,7 +26,7 @@ struct FIrebaseBasicApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NotesListView()
+            ContentView()
         }
     }
 }

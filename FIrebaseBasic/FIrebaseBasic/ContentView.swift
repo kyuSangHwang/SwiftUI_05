@@ -8,8 +8,12 @@
 import SwiftUI
 import GoogleSignInSwift
 
+extension AuthenticationViewModel {
+    @ObservedObject static var shared = AuthenticationViewModel()
+}
+
 struct ContentView: View {
-    @StateObject var authenticationViewModel = AuthenticationViewModel()
+    @StateObject var authenticationViewModel = AuthenticationViewModel.shared
     
     var body: some View {
         ZStack {
@@ -19,7 +23,8 @@ struct ContentView: View {
             case .busy:
                 ProgressView()
             case .signedIn:
-                ProfileView(authenticationViewModel: authenticationViewModel)
+                NotesListView()
+//                ProfileView(authenticationViewModel: authenticationViewModel)
             case .signedOut:
                 GoogleSignInButton(action: authenticationViewModel.login)
                     .frame(width: 150, height: 30, alignment: .center)
