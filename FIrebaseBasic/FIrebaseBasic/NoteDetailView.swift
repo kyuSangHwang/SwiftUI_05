@@ -11,7 +11,14 @@ struct NoteDetailView: View {
     var note: Note
 
     var body: some View {
-        Text("Hello, World!")
+        VStack(spacing: 12) {
+            Text(note.title)
+                .font(.headline)
+                .fontWeight(.bold)
+            TextEditor(text: .constant(note.body))
+                .border(.brown)
+        }
+        .padding(24)
     }
 }
 
