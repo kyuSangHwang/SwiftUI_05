@@ -1,5 +1,5 @@
 //
-//  NoteService.swift
+//  NotesService.swift
 //  FIrebaseBasic
 //
 //  Created by 황규상 on 4/29/24.
@@ -8,12 +8,12 @@
 import Firebase
 import FirebaseFirestore
 
-class NoteService: ObservableObject {
+class NotesService: ObservableObject {
     @Published var notes: [Note]
     private let dbCollection = Firestore.firestore().collection("notes")
     private var listener: ListenerRegistration?
     
-    init(notes: [Note]) {
+    init(notes: [Note] = []) {
         self.notes = notes
         startRealtimeUpdates()
     }
@@ -64,5 +64,5 @@ class NoteService: ObservableObject {
             $0.date < $1.date
         }
     }
+    
 }
-
